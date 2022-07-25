@@ -1,4 +1,4 @@
-root='root_dir' 
+root='root_dir'
 level_1=(
   'dir1'
   'dir2'
@@ -71,6 +71,6 @@ echo "$root/dir3/subdir3/z.txt" >> $FILE # >> to append contents
 
 
 mkdir tar_files
-tar -cvf tar_files/1_demo.tar -T file_list_1_demo.txt
-tar -cvf tar_files/2_main.tar -T file_list_2_main.txt
-tar -cvf tar_files/3_extra.tar -T file_list_3_extra.txt
+tar -czvf tar_files/1_demo.tar -T file_list_1_demo.txt
+tar -czvf tar_files/2_main.tar -T file_list_2_main.txt
+tar -czvf tar_files/3_extra.tar -T file_list_3_extra.txt
